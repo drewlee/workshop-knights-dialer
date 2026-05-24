@@ -5,6 +5,7 @@ const dialPad = [
   [null, 0, null],
 ];
 
+/** @type {[number, number]} */
 const moves = [
   [-2, -1],
   [-1, -2],
