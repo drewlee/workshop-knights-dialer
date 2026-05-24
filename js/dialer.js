@@ -37,7 +37,7 @@ function reachableKeys(startingDigit) {
         row = i;
         col = j;
         break;
-      } 
+      }
     }
   }
 
@@ -49,9 +49,11 @@ function reachableKeys(startingDigit) {
     const nCol = col + move[1];
 
     if (
-      nRow >= 0 && nRow < rowLen
-      && nCol >= 0 && nCol < colLen
-      && dialPad[nRow][nCol] !== null
+      nRow >= 0 &&
+      nRow < rowLen &&
+      nCol >= 0 &&
+      nCol < colLen &&
+      dialPad[nRow][nCol] !== null
     ) {
       moveToKeys.push(dialPad[nRow][nCol]);
     }
